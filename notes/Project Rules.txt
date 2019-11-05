@@ -1,0 +1,36 @@
+< Project Rules >
+
+^ presentation requirements
+- 10 min presentation
+- overall concept of your application
+- movitavation for developing the application
+- UI/UX design process
+- application process
+	- technology used
+	- how it works
+- demo test app's functionality
+	- optional : allow others to use app
+- direction for future development
+	- personal reflection
+	- to work on moving forward
+
+^ bonus
+- utilize firebase for persistant data storage
+- make app site mobile responsive
+
+^ project requirements
+- use minimum 2 APIs
+	- e.g: firebase & API, API & API, etc
+- use AJAX to pull request
+	- fetch/get method
+- use one new library/technique that was discussed before
+- create a polished front end web design
+- meet good quality coding standards
+	- indentation, scoping, naming, etc
+- DO NOT use alerts/confirms/prompts
+	- acceptable: create modal
+- incorporate some sort of repeating elements
+	- table, columns, etc
+- use CSS or alternative
+- deploy your site to GitHub pages
+- include user input validation/requirement

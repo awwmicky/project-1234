@@ -1,0 +1,27 @@
+< Project Overview >
+
+^ goal/about
+- conceive and execute a design that solves a real-world problem
+- by integrating data received from multiple server-side API requests
+- agile development methodologies and implement feature and bug fixes
+- using the git branch workflow and pull requests
+
+^ Key Topics
+Server-side APIs
+Git branching workflow
+Agile software development
+Comprehension Check
+
+^ Interview Q's
+- What is agile software development?
+- What is an MVP (minimal viable product)
+- how do you handle git branch merge conflicts?
+
+^ learning objectives
+- thoughts about the features you implemented in your project
+- processes using git branching workflow in a collaborative project
+	- resolving merge conflicts
+- describe agile software development
+- client-side web application using GitHub Pages
+- documentation for you project
+	- presentation notes and repository README

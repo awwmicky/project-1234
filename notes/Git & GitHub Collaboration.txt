@@ -1,0 +1,66 @@
+< Git & GitHub Collaboration >
+
+^ DOUBLE CHECK
+- (master) > ([branch name])
+    - check which pathway you're on
+
+^ CHECK GIT (1)
+- git checkout -b [branch-name]
+    - set branch name as task & initial
+    - creates & move to pathway
+    - e.g: git checkout -b [working-layout-MA]
+
+- git add *
+- git commit -m "[describe type of work]"
+- git push origin [branch-name]
+
+^ CHECK GITHUB
+- open repository > select 'branch' > select 'new pull request'
+- compare & Pull Request
+    - green button, with icon :: shorcut
+    - skips to 'open a pull request'
+
+- active branches : new pull request
+	- gray button, with icon
+- open a pull request : create pull request
+	- green button, arrow aside
+- comparing changes : view pull request
+	- green button, with icon
+	- verify which accounts
+		- base: master ← compare: [branch-name]
+		- '✓ able to merge. these branch can automatically merge'
+
+^ PULL REQUEST PROCESS
+- added [branch name] #…
+	- verify branch name
+	- 'open' > 'merged'
+		- green button, with icon > purple button, with icon
+	- [username] merged … into 'master' from '[branch name]'
+- merge pull request > confirm merge
+	- green button, arrow aside > green button
+- delete branch
+	- gray button, pop-up option
+	- 'pull request successfully merged and closed'
+
+
+^ APPROVAL OPTION
+- …
+
+
+^ CHECK GIT (2)
+- git checkout master
+    - ONLY for git pull & creating branches
+    - REMEMBER master does not have update yet
+- git pull
+    - all new updates & ready
+    - NOW go back to branch
+- OPTION 1 : git checkout -b [branch-name]
+    - create branch name with same/different task name
+- git branch -l
+    - view branches available on local PC
+- git branch -d [branch name]
+    - delete previous branch name from git
+- OPTION 2 : git checkout -b [branch-name]
+    - create branch name with same/different task name
+
+- REDO 'check git (1)'
