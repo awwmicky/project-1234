@@ -1,11 +1,9 @@
 header {
     width: 100%;
-    height: 10vh;
-    /* x */
-}
-
+    height: 10vh; /* x */
+}   
 header .container-wrapper {
-    background:#34ebe5;
+    background:orange;
     border: 2px solid black;
     display: flex;
     flex-flow: wrap;
@@ -14,60 +12,52 @@ header .container-wrapper {
     height: 100%;
     margin: 0 auto;
 }
+    .project-title {
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 100%;
+    }
+        .project-title i {
+            font-size: 3em;
+            padding: 0 5px 0 0;
+        }
+    .navbar {
+        border: 2px solid green;
+        height: 100%;
+    }
+        .navbar ul {
+            display: flex;
+            height: 100%;
+        }
+        .navbar li {
+            display: flex;
+            height: 100%;
+        }
 
-.project-title {
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 230px;
-    height: 100%;
-}
-
-.project-title i {
-    font-size: 3em;
-    padding: 0 5px 0 0;
-}
-
-.navbar {
-    border: 2px solid green;
-    height: 100%;
-}
-
-.navbar ul {
-    display: flex;
-    height: 100%;
-}
-
-.navbar li {
-    display: flex;
-    height: 100%;
-}
-
-.navbar li:hover {
-    background: darkgray;
-    cursor: pointer;
-}
-
-.navbar a {
-    color: black;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.navbar i {
-    margin-left: 5px;
-}
+        .navbar li:hover {
+            background: darkgray;
+            cursor: pointer;
+        }
+        .navbar a {
+            color: black;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .navbar i {
+            margin-left: 5px;
+        }
 
 /*  */
 
 footer {
-    background: green;
+    background: gray;
     width: 100%;
     min-height: 20vh;
 }
-
 footer .container-wrapper {
     border: 2px solid black;
     display: flex;
@@ -79,46 +69,37 @@ footer .container-wrapper {
     margin: 0 auto;
     min-height: 20vh;
 }
-
-.github-link {
-    border: 2px solid gold;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img.github-project:hover {
-    background: white;
-    border-radius: 1.5em;
-}
-
-.contribution-members {
-    border: 2px solid blue;
-    width: 100%;
-}
-
-.contribution-members h5 {
-    text-align: center;
-}
-
-.contribution-members nav {
-    border: 2px solid lightblue;
-    width: 100%;
-}
-
-.contribution-members ul {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-}
-
-.contribution-members li {
-    padding: 0 15px;
-}
-
-.contribution-members a {
-    text-decoration: none;
-}
-
+    .github-link {
+        border: 2px solid gold;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+        img.github-project:hover {
+            background: white;
+            border-radius: 1.5em;
+        }
+    .contribution-members {
+        border: 2px solid blue;
+        width: 100%;
+    }
+        .contribution-members h5 {
+            text-align: center;
+        }
+        .contribution-members nav {
+            border: 2px solid lightblue;
+            width: 100%;
+        }
+        .contribution-members ul {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+        }
+        .contribution-members li {
+            padding: 0 15px;
+        }
+        .contribution-members a {
+            text-decoration: none;
+        }
 /*  */
