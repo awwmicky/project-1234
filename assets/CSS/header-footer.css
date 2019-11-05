@@ -3,7 +3,7 @@ header {
     height: 10vh; /* x */
 }   
 header .container-wrapper {
-    background:orange;
+    background-image: url(../images/wallpaper.png);
     border: 2px solid black;
     display: flex;
     flex-flow: wrap;
