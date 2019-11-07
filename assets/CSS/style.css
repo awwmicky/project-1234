@@ -108,3 +108,18 @@ div.modal-account {
 .hidden {
     display: none;
 }
+
+
+/* Larry CSS */
+.reContainer {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.reContainer>div {
+    margin: 10px;
+    text-align: center;
+}
+.Container {
+    text-align: center;
+}
