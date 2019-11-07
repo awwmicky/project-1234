@@ -9,6 +9,9 @@ $(() => {
     const $emailInput = $('.email-input');
     const $passInput = $('.pass-input');
     const $userSignin = $('id-input');
+    
+    const $guestForm = $('.guest-form');
+    const $guestBtn = $('.guest-btn');
 
     const $loginBtn = $('.login-btn');
     const $signupBtn = $('.sign-up-btn');
@@ -149,10 +152,14 @@ $(() => {
 
     /*-----------------------anonymous login -----------------------------------------------------*/
     // const $userSignin = $('id-input');
-    const userlogin = $userSignin.val();
 
-    $loginAnnBtn.on('click', e => {
+    // $guestForm $guestBtn 
+
+    // const userlogin = $userSignin.val();
+
+    $guestBtn.on('click', e => {
         e.preventDefault();
+
         firebase.auth().signInAnonymously().catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;

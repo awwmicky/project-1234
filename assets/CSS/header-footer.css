@@ -45,7 +45,7 @@ header .container-wrapper {
             display: table;
         }
         .navbar li:hover {
-            background: darkgray;
+            background: #E8E8E8;
         }
         .navbar a {
             color: black;
