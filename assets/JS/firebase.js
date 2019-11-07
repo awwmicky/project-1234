@@ -1,5 +1,3 @@
-/* -------------------------------------------------------------------------- */
-
 $(() => {
     /*  */
 
@@ -35,26 +33,24 @@ $(() => {
     // console.log(database);
     const auth = firebase.auth();
 
-
     /* -------------------------------------------------------------------------- */
-
 
     let accountNav =
         `<li class="account-nav">
-        <a href="">
-            ACCOUNT <i class="fas fa-user"></i>
-        </a>
-    </li>`
+            <a href="">
+                ACCOUNT <i class="fas fa-user"></i>
+            </a>
+        </li>`
         ;
-    // let logoutBtn = $('<li>')
-    // logoutBtn.append(
+
     let logoutNav =
         `<li class="logout-nav">
-        <a href="">
-            LOGOUT <i class="fas fa-sign-out-alt"></i>
-        </a>
-    </li>`
+            <a href="">
+                LOGOUT <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </li>`
         ;
+
     /* ----------------------------hide modal and append logout button ---------------------------------------------- */
 
     auth
@@ -75,8 +71,10 @@ $(() => {
 
     /* ------------------------------sign up with username and password-------------------------------------------- */
 
-    $signupBtn.on('click', e => {
+    $(document).on('submit', '.account-form', e => {
         e.preventDefault();
+    
+        if ( $('.submit-btn').val() === 'SIGN UP' ) {
 
         const email = $emailInput.val();
         const pass = $passInput.val();
@@ -98,13 +96,17 @@ $(() => {
 
                 console.error(errorCode + '——' + errorMessage);
             });
+        
+        }
 
     });
 
     /* --------------------------sign in with username and password------------------------------------------------ */
 
-    $loginBtn.on('click', e => {
+    $(document).on('submit', '.account-form', e => {
         e.preventDefault();
+    
+        if ( $('.submit-btn').val() === 'LOGIN' ) {
 
         const email = $emailInput.val();
         const pass = $passInput.val();
@@ -127,6 +129,9 @@ $(() => {
 
                 console.error(errorCode + '——' + errorMessage);
             });
+
+        }
+
     });
     /* --------------------log out------------------------------------------------------ */
 
@@ -141,6 +146,7 @@ $(() => {
                 $('.user-sign-in').show();
             });
     });
+
     /*-----------------------anonymous login -----------------------------------------------------*/
     // const $userSignin = $('id-input');
     const userlogin = $userSignin.val();

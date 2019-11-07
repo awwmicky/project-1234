@@ -2,7 +2,7 @@
 /* NOTE:  *//* *: *//* !: *//* ?: */
 
 main {
-    min-height: 70vh;
+    min-height: 71.67vh;
 }
 main .container-wrapper {
     max-width: 960px;
@@ -40,75 +40,163 @@ main .container-wrapper {
             /* font-family: "Font Awesome"; */
             /* font-weight: 900;/ */
             /* text-rendering: optimizeLegibility; */
-        /* } */
-       
+        /* } */ 
 /*  */
-        
-.search-bar-content .exit {
-    border: 2px solid black;
-
-}
-.search-bar-content .exit-btn {
-    cursor: pointer;
-}
-
 
 div.modal-account {
     background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     position: absolute;
     top: 0;
     z-index: 5;
     width: 100%;
     height: 100%;
 
-    display: none;
+    /* display: none; */
 }
 .account-content {
-    background: white;
-    border: 2px solid black;
-    display: flex;
-    flex-flow: column;
-    width: 300px;
-    height: 150px;
+    background: #f1f1f1;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    position: relative;
+    max-width: 360px;
+    max-height: 580px;
+    margin: 0 auto;
+    padding: 80px 40px;
 }
-    .user-form {
-        border: 2px solid black;
-        width: 100%;
-        height: 100%;
-    }
-        .user-form label {
-            width: 60px;
-            display: inline-block;
-        }
-        .user-form label[for="email"]::after,
-        .user-form label[for="password"]::after {
-            content: ' *';
-            color: gray;
-        }
-        .submit-btns {
-            border: 2px solid black;
-            width: auto;
-            text-align: center;
-        }
-    .account-content .exit {
-        border: 2px solid black;
+    .exit-bar {
+        /* border: 2px solid black; */
+        position: absolute;
+        top: 10px;
+        left: 0;
         text-align: right;
+        width: 100%;
     }
-    .account-content .exit-btn {
-        cursor: pointer;
+        .exit-btn {
+            /* outline: none; */
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1.5em;
+            margin: 0 11px 0 0;
+            padding: 0 7px;
+        }
+            .exit-btn i:hover {
+                color: red;
+            }
+            .exit-btn i:active {
+                color: pink;
+            }
+    h2.form-title {
+        font-family: "Trenda-Bold";
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 60px;
     }
+    .input-container {
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+    }
+        .input {
+            outline: none;
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 15px;
+            width: 100%;
+            height: 40px;
+            padding: 0 5px;
+        }
+        /* .view-pass-bar {
+            border: 2px solid black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            text-align: right;
+        } */
+            .view-password {
+                outline: none;
+                cursor: pointer;
+                background: none;
+                border: none;
+                /* border: 2px solid black; */
+                font-size: 1.1em;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                /* height: 100%; */
+            }
+                .view-password:hover {
+                    color: gray;
+                }
+                .view-password:active {
+                    color: black;
+                }
+        .placeholder::before {
+            content: attr(data-placeholder);
+            color: #adadad;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            transition: 0.5s;
+            /* z-index: -1; */
+        }
+        .placeholder::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: black;
+            transition: 0.5s;
+        }
+            .focus + .placeholder::before {
+                top: -5px;
+            }
+            .focus + .placeholder::after {
+                width: 100%;
+            }
+        .submit-btn {
+            outline: none;
+            background: #77c7f8;
+            border: none;
+            border-radius: 0.5em;
+            color: black;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+            .submit-btn:hover {
+                background: #24a0ed;
+                color: white;
+            }
+        .account-option {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 60px;
+        }
+/*
+    .user-form label {
+        width: 60px;
+        display: inline-block;
+    }
+    .user-form label[for="email"]::after,
+    .user-form label[for="password"]::after {
+        content: ' *';
+        color: gray;
+    }
+    .submit-btns {
+        border: 2px solid black;
+        width: auto;
+        text-align: center;
+    }
+*/
 /*  */
-
-.active {
-    display: flex; /* block */
-}
-.hidden {
-    display: none;
-}
-
 
 /* Larry CSS */
 .reContainer {
