@@ -10,10 +10,12 @@ $(() => {
     const $userForm = $('.user-form');
     const $emailInput = $('.email-input');
     const $passInput = $('.pass-input');
+    const $userSignin = $('id-input');
 
     const $loginBtn = $('.login-btn');
     const $signupBtn = $('.sign-up-btn');
-    const $userSignin = $('id-input');
+    const $loginAnnBtn = $('.login-annonymous')
+
 
     /* -------------------------------------------------------------------------- */
 
@@ -33,22 +35,7 @@ $(() => {
     // console.log(database);
     const auth = firebase.auth();
 
-    /* 
-    auth.onAuthStateChanged(user => {
-        if (user) {
-            console.log('signed in');
-            $('#login').hide();
-            const logoutB = $('<button>').attr('id', 'logoutbutton');
-            logoutB.text('Logout')
-            $('#logoutbutton').append(logoutB);
-            $('#logoutbutton').show();
-        } else {
-            console.log('signed out');
-            $('#login').show();
-            $('.logoutbutton').empty();
-        }
-    });
-     */
+
     /* -------------------------------------------------------------------------- */
 
 
@@ -68,11 +55,7 @@ $(() => {
         </a>
     </li>`
         ;
-    // );
-
-
-
-    /* -------------------------------------------------------------------------- */
+    /* ----------------------------hide modal and append logout button ---------------------------------------------- */
 
     auth
         .onAuthStateChanged(user => {
@@ -90,7 +73,7 @@ $(() => {
             }
         });
 
-    /* -------------------------------------------------------------------------- */
+    /* ------------------------------sign up with username and password-------------------------------------------- */
 
     $signupBtn.on('click', e => {
         e.preventDefault();
@@ -118,7 +101,7 @@ $(() => {
 
     });
 
-    /* -------------------------------------------------------------------------- */
+    /* --------------------------sign in with username and password------------------------------------------------ */
 
     $loginBtn.on('click', e => {
         e.preventDefault();
@@ -145,7 +128,7 @@ $(() => {
                 console.error(errorCode + '——' + errorMessage);
             });
     });
-    /* -------------------------------------------------------------------------- */
+    /* --------------------log out------------------------------------------------------ */
 
     $(document).on('click', '.logout-nav', e => {
         e.preventDefault();
@@ -158,29 +141,31 @@ $(() => {
                 $('.user-sign-in').show();
             });
     });
-
+    /*-----------------------anonymous login -----------------------------------------------------*/
     // const $userSignin = $('id-input');
     const userlogin = $userSignin.val();
 
-    firebase.auth().signInAnonymously().catch(function (error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-    });
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            // User is signed in.
-            var isAnonymous = user.isAnonymous;
-            var uid = user.uid;
+    $loginAnnBtn.on('click', e => {
+        e.preventDefault();
+        firebase.auth().signInAnonymously().catch(function (error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
             // ...
-        } else {
-            // User is signed out.
+        });
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in.
+                var isAnonymous = user.isAnonymous;
+                var uid = user.uid;
+                // ...
+            } else {
+                // User is signed out.
+                // ...
+            }
             // ...
-        }
-        // ...
+        });
     });
-
 
     /*  */
 });
