@@ -1,0 +1,49 @@
+/* 
+- body : 2px
+- header : 10vh
+- main : 70vh
+- footer : 20vh
+*/
+
+@font-face {
+    font-family: 'Trenda-Regular';
+    src: url("../fonts/Trenda-Regular.otf")
+         format("opentype");
+}
+@font-face {
+    font-family: 'Trenda-Semibold';
+    src: url("../fonts/Trenda-Semibold.otf")
+         format("opentype");
+}
+@font-face {
+    font-family: 'Trenda-Bold';
+    src: url("../fonts/Trenda-Bold.otf")
+         format("opentype");
+}
+@font-face {
+    font-family: 'Trenda-Heavy';
+    src: url("../fonts/Trenda-Heavy.otf")
+         format("opentype");
+}
+@font-face {
+    font-family: 'Trenda-Light';
+    src: url("../fonts/Trenda-Light.otf")
+         format("opentype");
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* border: 2px solid black; */
+    /* font-family: sans-serif; */
+    font-family: 'Trenda-Regular';
+    position: relative;
+}
