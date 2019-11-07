@@ -33,7 +33,7 @@ $('.input').on('blur', function () {
 $(document).on('click', '.toggle-form', function (e) {
     e.preventDefault();
 
-    let state = $('.toggle-form').attr('data-state')
+    let state = $(this).attr('data-state')
     
     if ( state === 'login' ) {
         $('.form-title').text('Login');
@@ -41,7 +41,7 @@ $(document).on('click', '.toggle-form', function (e) {
         $('.account-option').html(
             `<p>
                 Don't have an account?
-                <a href="3" class="toggle-form" data-state="sign-up">Sign Up</a>
+                <a href="#" class="toggle-form" data-state="sign-up">Sign Up</a>
             </p>`
         );
     } else {
@@ -69,12 +69,3 @@ $('.view-password').on('click', function (e) {
 });
 /*  */
 });
-    
-    // how I can not use add/remove class to do the job?
-    // how do I search the specifc parent tag using 'this'?
-    // clear input value when closing
-    
-    /* 
-    - how to apply the same outcome?
-    - click exit btn | click outside content | press esc
-    */
