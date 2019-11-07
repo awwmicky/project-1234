@@ -1,8 +1,8 @@
 $(() => {
 
-    $('#rec-search').on('click', function (e) {
+    $('.search-btn').on('click', function (e) {
         e.preventDefault();
-        let query = $('#add-dish').val().trim();
+        let query = $('.search-input').val().trim();
 
         let app_id = '89c11dcf';
         let api_key = '8b946bfa6400d727d1b19be930436ff4';
