@@ -56,9 +56,10 @@
 
 body {
     /* width: 100vw; */
-    /* height: 100vh; */
+    min-height: 100vh;
     /* border: 2px solid black; */
-    /* font-family: sans-serif; */
-    font-family: 'Trenda-Regular';
+    font-family: 'Trenda-Regular', sans-serif;
     position: relative;
+    display: flex;
+    flex-flow: column;
 }
