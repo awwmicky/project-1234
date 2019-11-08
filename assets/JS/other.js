@@ -67,5 +67,56 @@ $('.view-password').on('click', function (e) {
         'password' : 'text'
     );
 });
+
+/* -------------------------------------------------------------------------- */
+/* 
+(function () {
+    let api_key = '6fcc3bbde6e04f2b8946660691a0e48c';
+    let base_url = 'https://api.spoonacular.com/recipes/random';
+    let query_url = base_url + `?apiKey=${api_key}` + '&number=1';
+    // console.log(query_url);
+    $.ajax({
+        method: "GET",
+        url: query_url,
+    })
+    .then(data => {
+        console.log(data.recipes[0]);
+        let recipe = data.recipes[0];
+        let ingredients = data.recipes[0].extendedIngredients;
+
+        function createList(arr) {
+            let ingrList = [];
+            for (let i = 0; i < arr.length; i++) {
+                let ingr = `<li>${arr[i].name}</li>`;
+                ingrList.push(ingr);
+            }
+            return ingrList;
+        }
+        // console.log( createList(ingredients) );
+
+        $('.food-highlight').html(
+            `<img src="${recipe.image}" alt="recipe image">
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    ${createList(ingredients).join('')}
+                </ul>
+            </div>
+            <div class="recipe">
+                <h2>${recipe.title}</h2>
+                <p>${recipe.instructions}</p>
+                <button class="view-site">
+                    <a href="${recipe.sourceUrl}">
+                        View More
+                    </a>
+                </button>
+            </div>`
+        );
+    })
+    .catch( err => {
+        console.error('message: ' + err);
+    });
+})();
+ */
 /*  */
 });
