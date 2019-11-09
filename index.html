@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="[160 max-char]">
     <meta name="author" content="Team 4 - Korba Kai">
-    <title>Project B</title>
+    <title>Recipe'able</title>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 <!-- CSS -->
@@ -21,21 +21,33 @@
     <div class="container-wrapper">
         <div class="project-title">
             <i class="fas fa-mountain"></i>
-            <h1>Project B</h1>
+            <h1>Recipe'able</h1>
         </div>
-        <div class="box"></div>
+        <div id="srch-1" class="search-bar-content">
+            <form class="search-form">
+                <input type="search" class="search-input" required>
+                <input type="submit" class="fas fa-search search-btn" value="&#xf002;">
+            </form>
+        </div>
         <nav class="navbar">
             <ul class="log-nav">
-                <li class="account-btn">
-                    <a href="">
-                        <i class="fas fa-user"></i>
+                <li class="search-nav">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
                     </a>
                 </li>
-                <li class="logout-btn">
-                    <a href="">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
-                </li>
+                <div class="toggle-nav">
+                    <li class="account-nav">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="logout-nav">
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -43,7 +55,7 @@
 
 <main>
     <div class="container-wrapper">
-        <div class="search-bar-content">
+        <div id="srch-2" class="search-bar-content">
             <form class="search-form">
                 <input type="search" class="search-input" required>
                 <input type="submit" class="fas fa-search search-btn" value="&#xf002;">
@@ -56,7 +68,7 @@
 
 <footer>
     <div class="container-wrapper">
-        <h4 class="small-title"><a href="https://www.omfgdogs.com/" target="_blank">Project B</a></h4> 
+        <h4 class="small-title"><a href="https://www.omfgdogs.com/" target="_blank">Recipe'able</a></h4> 
         <div class="github-link">
             <h4>Project Code</h4>
             <a href="https://github.com/awwmicky/Project-1234" target="_blank" title="Project B GitHub">
@@ -105,16 +117,14 @@
 
 <div class="modal-account" hidden>
     <div class="account-content">
-        <div class="exit-bar">
-            <button class="exit-btn">×</button>
-        </div>
+        <button class="exit-btn">×</button>
         <div class="form-title">
             <h2>Login</h2>
             <p>Welcome back!</p>
         </div>
         <form class="account-form">
             <div class="input-container">
-                <input type="email" name="email" class="email-input input" autocomplete="off" autofocus required>
+                <input type="email" name="email" class="email-input input" autocomplete="off" required>
                 <p class="placeholder" data-placeholder="email"></p>
             </div>
             <!-- <br> -->

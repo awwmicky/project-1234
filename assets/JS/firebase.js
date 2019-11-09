@@ -38,6 +38,14 @@ $(() => {
 
     /* -------------------------------------------------------------------------- */
 
+    let searchNav =
+        `<li class="search-nav">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </li>`
+        ;
+
     let accountNav =
         `<li class="account-nav">
             <a href="">
@@ -62,13 +70,13 @@ $(() => {
                 console.log('signed in');
                 // …show something !!
                 $('.modal-account').css('display', 'none');
-                $('.log-nav').empty();
-                $('.log-nav').append(logoutNav);
+                $('.toggle-nav').empty();
+                $('.toggle-nav').append(logoutNav);
             } else {
                 console.log('signed out');
                 // …hide something ..
-                $('.log-nav').empty();
-                $('.log-nav').append(accountNav);
+                $('.toggle-nav').empty();
+                $('.toggle-nav').append(accountNav);
             }
         });
 
