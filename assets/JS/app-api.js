@@ -12,6 +12,7 @@ $(() => {
             `&app_id=${app_id}` +
             `&app_key=${api_key}`
 
+        $('.food-highlight').empty();
         $('.reContainer').empty();
 
         $.ajax({
