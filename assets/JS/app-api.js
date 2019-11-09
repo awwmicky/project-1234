@@ -11,8 +11,6 @@ $(() => {
             `&app_id=${app_id}` +
             `&app_key=${api_key}`
 
-
-        //Get inmages and recipes names using ajax request and for loop. Apending those to DOM using jquery
         $.ajax({
             method: "GET",
             url: query_url,
@@ -33,6 +31,7 @@ $(() => {
         let base_u = 'https://api.spoonacular.com/recipes/search';
         let query_u = base_u + `?apiKey=${api_k}` + '&query=' + query
         console.log("new api", query_u);
+        $('.reContainer').empty();
         $.ajax({
             method: "GET",
             url: query_u,
@@ -47,7 +46,7 @@ $(() => {
                 );
             }
         });
-        //use on click function to link the inmages to its recipe
+
     })
     $('.reContainer').on('click', '.recipes', function () {
         let recipeLink = ($(this).attr('data-shareas'))
@@ -64,8 +63,6 @@ $(() => {
             url: `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${api_k}&includeNutrition=true`,
         }).then(data => {
             window.open(data.sourceUrl)
-            // let recipeId2 = ($(this).attr('vegetarian-sourceUrl'))
-            // $(location).attr('href', recipeId2);
         });
     })
 
