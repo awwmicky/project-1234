@@ -33,6 +33,7 @@ $(() => {
         let base_u = 'https://api.spoonacular.com/recipes/search';
         let query_u = base_u + `?apiKey=${api_k}` + '&query=' + query
         console.log("new api", query_u);
+        $('.reContainer').empty();
         $.ajax({
             method: "GET",
             url: query_u,

@@ -23,16 +23,17 @@
             <i class="fas fa-mountain"></i>
             <h1>Project B</h1>
         </div>
+        <div class="box"></div>
         <nav class="navbar">
             <ul class="log-nav">
                 <li class="account-btn">
                     <a href="">
-                        ACCOUNT <i class="fas fa-user"></i>
+                        <i class="fas fa-user"></i>
                     </a>
                 </li>
                 <li class="logout-btn">
                     <a href="">
-                        LOGOUT <i class="fas fa-sign-out-alt"></i>
+                        <i class="fas fa-sign-out-alt"></i>
                     </a>
                 </li>
             </ul>
@@ -46,14 +47,11 @@
             <form class="search-form">
                 <input type="search" class="search-input" required>
                 <input type="submit" class="fas fa-search search-btn" value="&#xf002;">
-                <!-- class="search-btn" -->
-                <!-- value="&#xf002;" -->
-                <!-- <i class="fas fa-search"></i></input> -->
             </form>
         </div>
+        <section class="food-highlight"></section>
+        <section class="reContainer"></section>
     </div>
-    <section class="food-highlight"></section>
-    <section class="reContainer"></section>
 </main>
 
 <footer>
@@ -108,14 +106,15 @@
 <div class="modal-account" hidden>
     <div class="account-content">
         <div class="exit-bar">
-            <button class="exit-btn">
-                    <i class="fas fa-times"></i>
-            </button>
+            <button class="exit-btn">×</button>
         </div>
-        <h2 class="form-title">Login</h2>
+        <div class="form-title">
+            <h2>Login</h2>
+            <p>Welcome back!</p>
+        </div>
         <form class="account-form">
             <div class="input-container">
-                <input type="email" name="email" class="email-input input" autocomplete="off" required>
+                <input type="email" name="email" class="email-input input" autocomplete="off" autofocus required>
                 <p class="placeholder" data-placeholder="email"></p>
             </div>
             <!-- <br> -->

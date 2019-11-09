@@ -1,9 +1,15 @@
+/* .box {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+} */
+
 header {
     width: 100%;
 }
 
 header .container-wrapper {
-    background-image: url(../images/wallpaper.png);
+    /* background-image: url(../images/wallpaper.png); */
     border: 2px solid black;
     display: flex;
     flex-flow: wrap;
@@ -13,7 +19,7 @@ header .container-wrapper {
     margin: 0 auto;
 }
     .project-title {
-        /* border: 2px solid red; */
+        border: 2px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,12 +28,12 @@ header .container-wrapper {
         padding: 5px 10px;
     }
         .project-title i {
-            font-size: 3em;
+            font-size: 1.5em;
             padding: 0 5px 0 0;
         }
         .project-title h1 {
             font-family: 'Trenda-Heavy';
-            font-size: 2.5em;
+            font-size: 1.5em;
         }
 
     .navbar {
@@ -57,12 +63,12 @@ header .container-wrapper {
             padding: 0 20px;
         }
         .navbar i {
-            margin-left: 5px;
+            /* margin-left: 5px; */
         }
 /*  */
 
 footer {
-    background: #E8E8E8;
+    background: #00843C;
     width: 100%;
     margin-top: auto;
 }
@@ -140,6 +146,9 @@ footer .container-wrapper {
 @media screen and (max-width: 285px) {
     .project-title {
         font-size: 0.75em;
+    }
+    .project-title h1 {
+        display: none;
     }
 
     .tooltip:hover::before {

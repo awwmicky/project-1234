@@ -1,0 +1,66 @@
+< Presentation Notes >
+
+= MICKY =
+- MVP (minimal viable product)
+	- purpose
+	- user journey
+		- guiding the 
+		- using the product
+			- feel | tone
+			- desktop or mobile
+			- consistent journey
+		- constraint/conflict
+			- app as solution
+	- main functionality
+
+= EVANK =
+- layout & CSS
+	- event listener
+	- interaction for user
+	- responsiveness & optimization
+	- using flex-box
+
+= WILSON =
+- authentication
+	- firebase
+		- enable via login or guest
+		- mirroring run time
+	- (quick demo)
+
+= LARRY =
+- AJAX
+	- search bar input
+	- append items to DOM
+	- API research
+	- JQuery as technique
+	- click image, direct link to url recipe
+
+< Final Thought >
+- future development
+	- more user feature
+		- nutrition facts
+		- side bar for saved searches
+		- food filtering option
+	- convert to app
+
+- Q & A
+	- CSS
+		- flex box
+	- AJAX
+		- other features in API documennts
+	- firebase
+
+- challenges & solutions
+	- research for free/functionable API key
+	- collaboration more determine
+		- decision making to continue
+		- setting a direction
+		- keeping on track
+	- functionality vs bonuses
+		- firebase | API topic
+	- using github branches
+		- collaborate setup
+		- beginning to git branch & git push
+			- avoiding conflicts & fixing conflicts
+- fun parts
+	- learn from each other

@@ -1,9 +1,9 @@
 /* TODO:  *//* REVIEW:  *//* FIXME:  *//* SECTION:  *//* STUB:  *//* ANCHOR:  */
 /* NOTE:  *//* *: *//* !: *//* ?: */
 
-main {
-    min-height: 71.67vh;
-}
+/* main { */
+    /* min-height: 71.67vh; */
+/* } */
 main .container-wrapper {
     max-width: 960px;
     height: 100%;
@@ -49,22 +49,31 @@ main .container-wrapper {
             cursor: pointer;
             border: none;
             background: none;
-            font-size: 1.5em;
+            color: black;
+            font-size: 2em;
             margin: 0 11px 0 0;
             padding: 0 7px;
         }
-            .exit-btn i:hover {
-                color: red;
+            .exit-btn:hover {
+                color: gray;
             }
-            .exit-btn i:active {
-                color: pink;
+            .exit-btn:active {
+                color: black;
             }
-    h2.form-title {
-        font-family: "Trenda-Bold";
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 60px;
+    .form-title {
+        margin-bottom: 20px;
     }
+    .form-title h2 {
+        font-family: "Trenda-Bold";
+        font-size: 1em;
+        padding-bottom: 5px;
+    }
+    .form-title p {
+        font-family: "Trenda-Bold";
+        font-size: 1.25em;
+    }
+
+
     .input-container {
         position: relative;
         border-bottom: 2px solid #adadad;
@@ -74,7 +83,7 @@ main .container-wrapper {
             outline: none;
             background: none;
             border: none;
-            color: gray;
+            color: black;
             font-size: 15px;
             width: 100%;
             height: 40px;
@@ -132,13 +141,16 @@ main .container-wrapper {
             }
         .submit-btn {
             outline: none;
-            background: #77c7f8;
+            cursor: pointer;
+            background: #009eff;
             border: none;
             border-radius: 0.5em;
-            color: black;
+            color: white;
+            /* font-family: 'Trenda-Bold'; */
+            font-weight: 500;
+            letter-spacing: 0.2em;
             width: 100%;
             height: 50px;
-            cursor: pointer;
             transition: 0.5s;
         }
             .submit-btn:hover {
@@ -150,6 +162,21 @@ main .container-wrapper {
             text-align: center;
             margin-top: 60px;
         }
+        .guest-form {
+            display: flex;
+            justify-content: center;
+        }
+            .guest-btn {
+                border: none;
+                background: lightgray;
+                width: 100%;
+                padding: 5px;
+            }
+                .guest-btn:hover {
+                    background: green;
+                    color: white;
+                }
+/*  */
 
                                             /* API style */
 .reContainer {
@@ -164,13 +191,13 @@ main .container-wrapper {
 
 .reContainer>div {
     margin: 10px auto;
-    text-align: center; 
+    text-align: center;
 
 }
 
 .reContainer>div>img{
-    border-radius: 10%;
-    border:solid green;
+    border-radius: 5%;
+    border:solid white;
 }
 /* .reContainerdivp{
     background-color:rgba(0, 0, 0, 0.228);  
@@ -179,12 +206,15 @@ main .container-wrapper {
 .reContainer>div>p>a{
     color:black;
     font-weight: bold;
+    font-size: 1.15em;
 
 }
 
 .reContainer>div{
     color:black;
     font-weight: bold;
+    font-size: 1.15em;
+    letter-spacing: 0.015em;
 
 }
 
