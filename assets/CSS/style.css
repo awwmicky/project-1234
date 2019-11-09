@@ -161,22 +161,21 @@ main .container-wrapper {
     /* background-color:lightblue; */
     background-image: url(../images/tileable_wood_texture_@2X.png);
 }
-.reContainer>div {
-    /* border: solid green; */
-    /* background-color:orange; */
-    margin: 10px auto;
-    text-align: center;
 
-   
+.reContainer>div {
+    margin: 10px auto;
+    text-align: center; 
+
 }
+
 .reContainer>div>img{
     border-radius: 10%;
     border:solid green;
 }
-.reContainer>div>p{
-    background-color:rgba(0, 0, 0, 0.228);
-    
-}
+/* .reContainerdivp{
+    background-color:rgba(0, 0, 0, 0.228);  
+} */
+
 .reContainer>div>p>a{
     color:black;
     font-weight: bold;
@@ -191,14 +190,9 @@ main .container-wrapper {
 
                                             /* welcome-part */
 div.modal-account {
-    /* background:lightblue; */
     background-image: url(../images/gift_page_landing_bg_Mobile_Image.png);
     background-position: center;
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     position: absolute;
     top: 0;
     z-index: 5;
@@ -224,8 +218,6 @@ div.modal-account {
         display: flex;
         align-content: center;
         flex-wrap: wrap;
-        /* background-color:lightblue; */
-        background-image: url(../images/morocco-blue.png);
     }
     .reContainer>div>img{
         border-radius: 20%;
@@ -245,9 +237,9 @@ div.modal-account {
         text-align: center;
         font-size: 1.5em;
         width: 90%;
-        background-color:black;
+        background-color:rgb(80, 83, 83);
         color:white;
     }
-    
+
 
 }
