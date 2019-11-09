@@ -6,14 +6,18 @@
 /* 
 - whitesmoke
 - white
-- slategray
 - gray
 - black
+
+- #f7f7f7
 - #f1f1f1
 - #E8E8E8
 - #adadad
-- #77c7f8
-- #24a0ed
+
+- #38b1fc
+- #009eff
+- #09ca60
+- #00843C
 - rgba(0, 0, 0, 0.7)
 - red
 - blue
@@ -55,6 +59,10 @@
 }
 
 body {
+    background-image: url(../images/Wood-Texture-Background.png);
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: cover; */
     /* width: 100vw; */
     min-height: 100vh;
     /* border: 2px solid black; */

@@ -5,21 +5,23 @@
 } */
 
 header {
+    /* transform: translateY(); */
     width: 100%;
 }
 
 header .container-wrapper {
-    /* background-image: url(../images/wallpaper.png); */
+    background: white;
     border: 2px solid black;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    position: relative;
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
 }
     .project-title {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,18 +31,18 @@ header .container-wrapper {
     }
         .project-title i {
             font-size: 1.5em;
-            padding: 0 5px 0 0;
+            padding-right: 5px;
         }
         .project-title h1 {
             font-family: 'Trenda-Heavy';
             font-size: 1.5em;
         }
 
-    .navbar {
-        border: 2px solid green;
-    }
+    /* .navbar { */
+        /* border: 2px solid green; */
+    /* } */
         .navbar ul {
-            /* display: flex; */
+            display: flex;
             height: 100%;
         }
         .navbar li {
@@ -49,9 +51,13 @@ header .container-wrapper {
             cursor: pointer;
             display: table;
         }
-        .navbar li:hover {
-            background: #E8E8E8;
-        }
+            .navbar li:hover {
+                background: #00843C;
+            }
+            .navbar li:active a {
+                background: #00843C;
+                color: white;
+            }
         .navbar a {
             color: black;
             font-family: 'Trenda-Semibold';
@@ -62,15 +68,13 @@ header .container-wrapper {
             height: 100%;
             padding: 0 20px;
         }
-        .navbar i {
-            /* margin-left: 5px; */
-        }
 /*  */
 
 footer {
     background: #00843C;
     width: 100%;
     margin-top: auto;
+    /* color: white; */
 }
 
 footer .container-wrapper {
@@ -83,12 +87,12 @@ footer .container-wrapper {
     margin: 0 auto;
 }
     .small-title a {
+        cursor: alias;
         font-family: 'Trenda-Bold';
-        color: black;
-        cursor: copy;
+        color: white;
     }
     .small-title a:active {
-        color: red;
+        color: green;
     }
     .github-link {
         /* border: 2px solid gold; */
@@ -97,6 +101,9 @@ footer .container-wrapper {
         justify-content: center;
         align-items: center;
     }
+        .github-link h4 {
+            color: white;
+        }
         img.github-project {
             border: 2px solid rgba(0, 0, 0, 0);
             border-radius: 1.5em;
@@ -111,6 +118,7 @@ footer .container-wrapper {
         width: 100%;
     }
         .contribution-members h5 {
+            color: white;
             text-align: center;
         }
         .contribution-members nav {
@@ -127,7 +135,7 @@ footer .container-wrapper {
             }
             .contribution-members a {
                 text-decoration: none;
-                color: black;
+                color: white;
             }
             .contribution-members a:hover {
                 color: red;
@@ -135,24 +143,22 @@ footer .container-wrapper {
             .contribution-members a:active {
                 color: blue;
             }
+        .team-four {
+            color: white;
+        }
 /*  */
 
-@media screen and (max-width: 455px) {
-    header .container-wrapper {
-        justify-content: space-around;
-    }
-}
+/* @media screen and (max-width: 455px) { */
+    /* header .container-wrapper { */
+        /* justify-content: space-around; */
+    /* } */
+/* } */
 
-@media screen and (max-width: 285px) {
-    .project-title {
-        font-size: 0.75em;
+@media screen and (max-width: 320px) {
+    .project-title i {
+        padding-right: 0;
     }
     .project-title h1 {
         display: none;
-    }
-
-    .tooltip:hover::before {
-        top: 40px;
-        display: inline-block;
     }
 }

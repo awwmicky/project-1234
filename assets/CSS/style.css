@@ -11,10 +11,11 @@ main .container-wrapper {
 }
 
 .search-bar-content {
-    background: whitesmoke;
-    border: 2px solid black;
+    background: white;
+    /* border: 2px solid black; */
     /* display: flex; */
-    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
     .search-form {
         background: none;
@@ -23,46 +24,71 @@ main .container-wrapper {
         display: flex;
         justify-content: center;
         width: 100%;
+        height: 100%;
     }
+        .search-form:hover {
+            border: 2px solid #00843C;   
+        }
         .search-input {
             border: none;
-            border-bottom: 5px solid rgb(144, 123, 112);
             text-align: center;
             font-size: 1.5em;
-            width: 90%;
+            width: 100%;
         }
         .search-btn {
-            padding: 7px;
-            cursor: pointer;
-        }
-        
-    .exit-bar {
-        /* border: 2px solid black; */
-        position: absolute;
-        top: 10px;
-        left: 0;
-        text-align: right;
-        width: 100%;
-    }
-        .exit-btn {
-            /* outline: none; */
+            outline: none;
             cursor: pointer;
             border: none;
-            background: none;
-            color: black;
-            font-size: 2em;
-            margin: 0 11px 0 0;
-            padding: 0 7px;
+            background: gray;
+            color: white;
+            padding: 7px;
         }
-            .exit-btn:hover {
-                color: gray;
+            .search-btn:hover {
+                background: #00843C;
             }
-            .exit-btn:active {
-                color: black;
+            .search-btn:active {
+                background: gray;
             }
-    .form-title {
-        margin-bottom: 20px;
+/* #srch-1 { */
+    /* position: absolute; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* border: 2px solid green; */
+    /* width: 100%; */
+    /* height: 100%; */
+/* } */
+#srch-2 {
+    display: none;
+}
+.search-nav {
+    display: none !important;
+}
+/*  */
+
+.exit-btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 9px;
+}
+    .exit-btn:hover {
+        color: gray;
     }
+    .exit-btn:active {
+        color: black;
+    }
+.form-title {
+    margin-bottom: 20px;
+}
     .form-title h2 {
         font-family: "Trenda-Bold";
         font-size: 1em;
@@ -89,14 +115,6 @@ main .container-wrapper {
             height: 40px;
             padding: 0 5px;
         }
-        /* .view-pass-bar {
-            border: 2px solid black;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            text-align: right;
-        } */
             .view-password {
                 outline: none;
                 cursor: pointer;
@@ -146,15 +164,19 @@ main .container-wrapper {
             border: none;
             border-radius: 0.5em;
             color: white;
-            /* font-family: 'Trenda-Bold'; */
-            font-weight: 500;
+            font-family: 'Trenda-Bold';
+            /* font-weight: 500; */
             letter-spacing: 0.2em;
             width: 100%;
             height: 50px;
             transition: 0.5s;
         }
             .submit-btn:hover {
-                background: #24a0ed;
+                background: #38b1fc;
+                color: black;
+            }
+            .submit-btn:active {
+                background: #009eff;
                 color: white;
             }
         .account-option {
@@ -167,17 +189,26 @@ main .container-wrapper {
             justify-content: center;
         }
             .guest-btn {
+                outline: none;
+                cursor: pointer;
                 border: none;
-                background: lightgray;
+                background: #00843C;
+                color: white;
+                letter-spacing: 0.2em;
                 width: 100%;
-                padding: 5px;
+                padding: 5px 0;
+                transition: 0.5s;
             }
                 .guest-btn:hover {
-                    background: green;
+                    background: #09ca60;
+                    color: black;
+                }
+                .guest-btn:active {
+                    background: #00843C;
                     color: white;
                 }
 /*  */
-
+/*  */
                                             /* API style */
 .reContainer {
     /* width: 80%;
@@ -186,7 +217,6 @@ main .container-wrapper {
     align-content: center;
     flex-wrap: wrap;
     /* background-color:lightblue; */
-    background-image: url(../images/tileable_wood_texture_@2X.png);
 }
 
 .reContainer>div {
@@ -196,18 +226,19 @@ main .container-wrapper {
 }
 
 .reContainer>div>img{
+    cursor: pointer;
     border-radius: 5%;
     border:solid white;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
-/* .reContainerdivp{
-    background-color:rgba(0, 0, 0, 0.228);  
-} */
 
-.reContainer>div>p>a{
-    color:black;
-    font-weight: bold;
-    font-size: 1.15em;
-
+.reContainer>div>p {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .reContainer>div{
@@ -220,8 +251,9 @@ main .container-wrapper {
 
                                             /* welcome-part */
 div.modal-account {
-    background-image: url(../images/gift_page_landing_bg_Mobile_Image.png);
+    background-image: url(../images/Account-Form-Background.png);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -250,26 +282,88 @@ div.modal-account {
         flex-wrap: wrap;
     }
     .reContainer>div>img{
-        border-radius: 20%;
-        border:solid orange;
+        border-radius: 5%;
+        border:solid white;
         width: 100%;
+    }
+    .reContainer>div>p {
+        min-width: 100%;
     }
     .reContainer>div {
         margin: 10px auto;
         text-align: center;
         width: 80%;
-    
-       
     }
-    .search-input {
-        border: none;
-        border-bottom: 5px solid rgb(144, 123, 112);
-        text-align: center;
-        font-size: 1.5em;
-        width: 90%;
-        background-color:rgb(80, 83, 83);
-        color:white;
-    }
+}
 
+/*  */
+/*  */
+
+.food-highlight {
+    border: 2px solid black;
+    height: 100%;
+}
+.food-highlight blockquote {
+    text-align: center;
+    font-size: 2.5em;
+}
+.food-container {
+    border: 2px solid gray;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.img-container {
+    border: 2px solid black;
+    max-width: 500px;
+    height: 100%;
+}
+.img-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ingredients-recipe {
+    border: 2px solid gray;
+    display: flex;
+    /* flex-flow: wrap; */
+}
+.ingredients {
+    border: 2px solid black;
+}
+.ingredients ul {
+    padding: 0 5px;
+}
+.recipe {
+    border: 2px solid black;
+}
+
+/*  */
+
+.active {
+    display: flex !important;
+}
+@media screen and (min-width: 580px) {
+    #srch-2 {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 580px) {
+    #srch-1 {
+        display: none;
+    }
+    .navbar li {
+        display: table !important;
+    }
+    .search-nav {
+        display: table-cell !important;
+    }
+    .ingredients-recipe {
+        flex-flow: wrap;
+    }
+    .ingredients ul li {
+        display: inline;
+        padding: 0 5px;
+    }
 
 }
