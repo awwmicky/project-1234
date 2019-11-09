@@ -41,7 +41,7 @@ $(() => {
     let accountNav =
         `<li class="account-nav">
             <a href="">
-                ACCOUNT <i class="fas fa-user"></i>
+                <i class="fas fa-user"></i>
             </a>
         </li>`
         ;
@@ -49,7 +49,7 @@ $(() => {
     let logoutNav =
         `<li class="logout-nav">
             <a href="">
-                LOGOUT <i class="fas fa-sign-out-alt"></i>
+                <i class="fas fa-sign-out-alt"></i>
             </a>
         </li>`
         ;

@@ -36,7 +36,10 @@ $(document).on('click', '.toggle-form', function (e) {
     let state = $(this).attr('data-state')
     
     if ( state === 'login' ) {
-        $('.form-title').text('Login');
+        $('.form-title').html(
+            `<h2>Login</h2>
+             <p>Welcome back</p>`
+        );
         $('.submit-btn').val('LOGIN');
         $('.account-option').html(
             `<p>
@@ -45,7 +48,10 @@ $(document).on('click', '.toggle-form', function (e) {
             </p>`
         );
     } else {
-        $('.form-title').text('Sign Up');
+        $('.form-title').html(
+            `<h2>Sign Up</h2>
+            <p>Come to cook</p>`
+        );
         $('.submit-btn').val('SIGN UP');
         $('.account-option').html(
             `<p>
