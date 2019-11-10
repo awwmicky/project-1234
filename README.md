@@ -1,4 +1,4 @@
-# Project Snowy
+# UCB - Project Recipe'able
 
 ## Collaborators
  Wilson Wong - Enktaivan SainEr - Larry Yuki - Micky F. Alvarez
