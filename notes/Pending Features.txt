@@ -1,0 +1,46 @@
+< Pending Features >
+* UI/UX features
+
+    - desktop view
+        - display as column to categorize
+    - mobile view
+        - display as tab folds to categorize
+    - main page gallery
+        - courosel slide (fn interval)
+
+    - authentication flow
+        - replace 'alert()' with verification animation
+    - responsive search bar
+        - auto close search bar (main)
+            - from small toggle on, expand wide off, small, off
+        - pseudo center search bar (header)
+            - using position absolute for layering it
+            - adjust media-query for responsiveness
+    - update/adjust CSS
+        - reduce usage of '!important'
+        - main section web page
+        - alternative footer full bottom
+            - using grid
+            - using 'flex: 1 1 auto' (main)
+        - keep login modal as full viewport
+    
+* Firebase
+    - login with specified user id data
+    - side bar for saved searches
+    - account settings menu
+    - apply username login
+        - add username with email & password account
+    - authentication approval process
+
+* API / AJAX
+    - autocomplete search results
+        - recipe/ingredient
+    - display nutrition facts (modal)
+    - filtering search options
+
+- rename project 1
+	- github repo name
+	- local folder name
+	- HTML
+        - #74 : <a href>
+
