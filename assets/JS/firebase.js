@@ -21,13 +21,13 @@ $(() => {
     /* -------------------------------------------------------------------------- */
 
     const firebaseConfig = {
-        apiKey: "AIzaSyAEgZVGKLpktoJVDCiHRoug_rLi7qjSTcg",
-        authDomain: "project-snowy.firebaseapp.com",
-        databaseURL: "https://project-snowy.firebaseio.com",
-        projectId: "project-snowy",
-        storageBucket: "project-snowy.appspot.com",
-        messagingSenderId: "111717425092",
-        appId: "1:111717425092:web:c99b2c8a86c02db87d0e91"
+        apiKey: "AIzaSyAEl9TCaTEvRKdTaQiDTHMbS57qHwww1DA",
+        authDomain: "ucb-project-recipe-able.firebaseapp.com",
+        databaseURL: "https://ucb-project-recipe-able.firebaseio.com",
+        projectId: "ucb-project-recipe-able",
+        storageBucket: "ucb-project-recipe-able.appspot.com",
+        messagingSenderId: "539017867965",
+        appId: "1:539017867965:web:ed47e57788911c598f3dd4"
     };
 
     firebase.initializeApp(firebaseConfig);

@@ -4,7 +4,17 @@
  Wilson Wong - Enktaivan SainEr - Larry Yuki - Micky F. Alvarez
  - - -
 
-### Tools Used
+### Roles
+* Wilson Wong
+    - Firebase
+* Enktaivan SainEr
+    - API Layout
+* Larry Yuki
+    - API / AJAX
+* Micky F. Alvarez
+    - Team Lead
+
+### Program Tools
 * HTML - CSS - JS - Firebase - API - JQuery
 
 ### Update Log

@@ -1,12 +1,14 @@
 $(() => {
 
+/* --------------------------------- Edamam --------------------------------- */
+
     $('.search-btn').on('click', function (e) {
         e.preventDefault();
         let query = $('.search-input').val().trim();
         $('.search-input').val("");
 
-        let app_id = '89c11dcf';
-        let api_key = '8b946bfa6400d727d1b19be930436ff4';
+        let app_id = 'b1e09854';
+        let api_key = 'ce22917dff8e38f2d2d44ae49bb52494';
         let base_url = 'https://api.edamam.com/search';
         let query_url = base_url + "?q=" + query +
             `&app_id=${app_id}` +
@@ -31,7 +33,9 @@ $(() => {
             }
         });
 
-        let api_k = '6fcc3bbde6e04f2b8946660691a0e48c';
+/* ---------------------------- Spoontacular API ---------------------------- */
+
+        let api_k = '998c01fb5a2244468d871727593f27ca';
         let base_u = 'https://api.spoonacular.com/recipes/search';
         let query_u = base_u + `?apiKey=${api_k}` + '&query=' + query
         console.log("new api", query_u);
@@ -60,7 +64,7 @@ $(() => {
     });
     $('.reContainer').on('click', '.recipes2', function () {
         let recipeId = ($(this).attr('data-id'))
-        let api_k = '6fcc3bbde6e04f2b8946660691a0e48c';
+        let api_k = '998c01fb5a2244468d871727593f27ca';
 
         $.ajax({
             method: "GET",
@@ -73,7 +77,7 @@ $(() => {
 /* -------------------------------------------------------------------------- */
 
 function foodHighlights() {
-    let api_key = '6fcc3bbde6e04f2b8946660691a0e48c';
+    let api_key = '998c01fb5a2244468d871727593f27ca';
     let base_url = 'https://api.spoonacular.com/recipes/random';
     let query_url = base_url + `?apiKey=${api_key}` + '&number=1';
     // console.log(query_url);
