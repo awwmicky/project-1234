@@ -251,7 +251,7 @@ main .container-wrapper {
 
                                             /* welcome-part */
 div.modal-account {
-    background-image: url(../images/Account-Form-Background.png);
+    background-image: url("../images/other/account-modal-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

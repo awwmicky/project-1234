@@ -1,24 +1,19 @@
-# UCB - Project Recipe'able
+# Recipe'able App
+
+---
+
+## Tech. Tools
+ HTML - CSS - JavaScript - AJAX - jQuery - Firebase
 
 ## Collaborators
- Wilson Wong - Enktaivan SainEr - Larry Yuki - Micky F. Alvarez
+* **Wilson Wong** - Firebase / authentication
+* **Enktaivan SainEr** - responsive layout
+* **Larry Yuki** - HTTP Request / AJAX
+* **Micky F. Alvarez** - Project Lead
 
- - - -
+## Third Party API Resource
+[Spoonacular API]("https://spoonacular.com/food-api/console#Dashboard")
+- description
 
-### Roles
-* **Wilson Wong** - Firebase
-* **Enktaivan SainEr** - API Layout
-* **Larry Yuki** - API / AJAX
-* **Micky F. Alvarez** - Team Lead
-
-### API URL Source
-    - [Spoonacular](https://spoonacular.com/food-api/console#Dashboard)
-    - [Edamam](https://developer.edamam.com/)
-
-### Program Tools
-* HTML - CSS - JS - Firebase - API - JQuery
-
-### Update Log
-<!-- [MM/DD/YYYY] | [TIME] -->
-<!-- in-progess | complete -->
-<!-- > comment -->
+[Edamam API]("https://developer.edamam.com/")
+- description

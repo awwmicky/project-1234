@@ -20,21 +20,6 @@ $(() => {
 
     /* -------------------------------------------------------------------------- */
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyAEl9TCaTEvRKdTaQiDTHMbS57qHwww1DA",
-        authDomain: "ucb-project-recipe-able.firebaseapp.com",
-        databaseURL: "https://ucb-project-recipe-able.firebaseio.com",
-        projectId: "ucb-project-recipe-able",
-        storageBucket: "ucb-project-recipe-able.appspot.com",
-        messagingSenderId: "539017867965",
-        appId: "1:539017867965:web:ed47e57788911c598f3dd4"
-    };
-
-    firebase.initializeApp(firebaseConfig);
-    // database snapshot
-    const db = firebase.database();
-    // console.log(database);
-    const auth = firebase.auth();
 
     /* -------------------------------------------------------------------------- */
 

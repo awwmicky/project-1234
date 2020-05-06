@@ -1,1 +1,10 @@
-.vscode
+# Firebase
+/.firebase
+# firebase.json
+database.rules.json
+.firebaserc
+firebase-debug.log
+
+# OTHER
+/notes
+/test
