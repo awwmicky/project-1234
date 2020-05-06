@@ -12,8 +12,8 @@
 * **Micky F. Alvarez** - Project Lead
 
 ## Third Party API Resource
-[Spoonacular API]("https://spoonacular.com/food-api/console#Dashboard")
+[Spoonacular API](https://spoonacular.com/food-api/console#Dashboard)
 - description
 
-[Edamam API]("https://developer.edamam.com/")
+[Edamam API](https://developer.edamam.com/)
 - description
